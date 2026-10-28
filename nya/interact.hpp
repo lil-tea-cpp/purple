@@ -6,10 +6,10 @@ namespace nya {
 
 template <class ty>
 class	interact {
+public:
+
 	std::weak_ptr<interact> pre_;
 	std::shared_ptr<interact> nxt_;
-
-public:
 	std::unique_ptr<ty> val_;
 
 	template <class...argz>
